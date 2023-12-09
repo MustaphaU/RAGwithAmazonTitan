@@ -303,15 +303,6 @@ def qa(query, temperature, topP):
     
     return chain(query)
 
-# Developing a Streamlit App interface
-
-
-#st.image("https://karaamanalytics.com/wp-content/uploads/2022/12/karaamA-1.svg")
-#st.image("https://www.capgemini.com/wp-content/themes/capgemini-komposite/assets/images/logo.svg")
-
-#create the title for the app and load the image logo.jpg from the same directory as the app
-#st.image("logo.jpg") 
-#st.title("Retrieval Augmented Generation with Kendra, Amazon Bedrock, and LangChain")
 company_logo = get_image_base64("logo.jpg")
 st.markdown(f"""
     <div style="text-align: center;">
@@ -320,7 +311,6 @@ st.markdown(f"""
             </div>
 """, unsafe_allow_html=True)
 
-#st.title("Retrieval Augmented Generation with Kendra, Amazon Bedrock, and LangChain")
 #creating a sidebar with a title and sliders for temperature and top-p
 with st.sidebar:
     st.title("Inference Parameters")
