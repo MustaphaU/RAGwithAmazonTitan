@@ -303,7 +303,7 @@ def qa(query, temperature, topP):
     
     return chain(query)
 
-company_logo = get_image_base64("logo.jpg")
+company_logo = get_image_base64("Assets/logo.jpg")
 st.markdown(f"""
     <div style="text-align: center;">
         <img src="data:image/jpg;base64,{company_logo}" alt="Karaam Analytics" style="height: 70px; padding-left: 5px;">
@@ -419,12 +419,12 @@ elif generate_content == "Powerpoint":
 
 
 
-aws_kendra_logo = get_image_base64("kendra.jpg")
-langchain_logo = get_image_base64("langchain.png")
-bedrock_logo = get_image_base64("bedrock.png")
-ec2_logo = get_image_base64("Amazon_ec2.png")
-secrets_manager_logo = get_image_base64("AWS_secrets.png")
-s3_logo = get_image_base64("s3-bucket.png")
+aws_kendra_logo = get_image_base64("Assets/kendra.jpg")
+langchain_logo = get_image_base64("Assets/langchain.png")
+bedrock_logo = get_image_base64("Assets/bedrock.png")
+ec2_logo = get_image_base64("Assets/Amazon_ec2.png")
+secrets_manager_logo = get_image_base64("Assets/AWS_secrets.png")
+s3_logo = get_image_base64("Assets/s3-bucket.png")
 
 st.markdown(f"""
     <div style="text-align: left;">
