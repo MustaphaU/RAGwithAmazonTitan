@@ -219,8 +219,8 @@ def create_ppt_from_json(json_data):
     footer_width = prs.slide_width - Inches(1)
     footer_height = Inches(0.5)
 
-    #get capgemini logo
-    capgemini_logo = "logo.jpg"
+    #get logo
+    logo = "logo.jpg"
 
     logo_width = Inches(1.5)  # Adjust as needed
     logo_x_position = prs.slide_width - logo_width - Inches(0.5)  # Adjust the 0.5 inch offset as needed
@@ -255,7 +255,7 @@ def create_ppt_from_json(json_data):
             p.alignment = PP_PARAGRAPH_ALIGNMENT.LEFT
 
         # Add logo to the top right corner
-        slide.shapes.add_picture(capgemini_logo, logo_x_position, logo_y_position, width=logo_width)
+        slide.shapes.add_picture(logo, logo_x_position, logo_y_position, width=logo_width)
 
         # Add footer to the slide
         footer_shape = slide.shapes.add_textbox(footer_left, footer_top, footer_width, footer_height)
