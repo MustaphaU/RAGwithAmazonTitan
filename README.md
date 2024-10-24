@@ -4,3 +4,9 @@ A Demo of Retrieval Augmented Generation with Amazon Titan, Bedrock, Kendra, and
 ![Kendra pipeline](./Assets/Kendra_Pipeline.png)
 ![RAG process](./Assets/_retrieval.png)
 ![ec2 app](./Assets/ec2_app.png)
+
+
+
+### How to launch the application
+
+To be added
